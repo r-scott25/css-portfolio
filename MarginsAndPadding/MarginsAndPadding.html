@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body  style="font-family: sans-serif; font-size: 20px">
+  <h1>CSS Margins and Padding</h1>
+
+  <h2>Padding</h2>
+  <ul>
+    <li>The clear/transparent space that sits between the edge of an element and its border</li>
+    <li>Individual Properties</li>
+    <ul>
+      <li>padding-top: 10px</li>
+      <li>padding-right: 20px</li>
+      <li>padding-bottom: 10px</li>
+      <li>padding-left: 20px</li>
+    </ul>
+    <li>Shorthand Notation</li>
+    <ul>
+      <li>padding: 10px 20px 15px 10px;</li>
+        <ul>
+          <li>These values apply in the order of top, right, bottom, left</li>
+        </ul>
+      <li>padding: 10px 20px 15px;</li>
+      <ul>
+        <li>These values apply in the order of top, right/left, bottom</li>
+      </ul>
+      <li>padding: 10px 20px;</li>
+      <ul>
+        <li>These values apply in the order of top/bottom, right/left</li>
+      </ul>
+      <li>padding: 10px;</li>
+      <ul>
+        <li>All sides share the same value top/bottom/left/right</li>
+      </ul>
+    </ul>
+  </ul>
+
+  <h2>Margins</h2>
+  <ul>
+    <li>Applied outside of an element's border, and represent the space between elements</li>
+    <li>While not factored into the total width of an element, it does affect the amount of space that an element takes up on a page</li>
+    <li>Many elements have a default margin defined by user agents (If you use a CSS reset, to set your margins to 0, then you don't have to worry about it</li>
+    <li>Individual Properties</li>
+    <ul>
+      <li>margin-top: 10px</li>
+      <li>margin-right: 20px</li>
+      <li>margin-bottom: 10px</li>
+      <li>margin-left: 20px</li>
+    </ul>
+    <li>Shorthand Notation</li>
+    <ul>
+      <li>margin: 10px 20px 15px 10px;</li>
+        <ul>
+          <li>These values apply in the order of top, right, bottom, left</li>
+        </ul>
+      <li>margin: 10px 20px 15px;</li>
+      <ul>
+        <li>These values apply in the order of top, right/left, bottom</li>
+      </ul>
+      <li>margin: 10px 20px;</li>
+      <ul>
+        <li>These values apply in the order of top/bottom, right/left</li>
+      </ul>
+      <li>margin: 10px;</li>
+      <ul>
+        <li>All sides share the same value top/bottom/left/right</li>
+      </ul>
+    </ul>
+    <li>Note: Unlike horizontal margins, vertical margins are somtimes combined, or collapsed, into a single margin 
+      whose size is the largest of the individual margins.That means that if you have two elements stacked on top of one another,
+      only one of the elements' top and bottom margins are applied.</li>
+  </ul>
+
+
+</body>
+</html>
