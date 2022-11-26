@@ -1,0 +1,10 @@
+/* 
+Font Family
+  - Specifies the font for an element
+  - Is a prioritized list of fonts
+  - Includes a fallback font 
+  */
+
+  p {
+    font-family: "Times New Roman", Times, serif;
+  }
