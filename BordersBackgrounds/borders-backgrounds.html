@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body  style="font-family: sans-serif; font-size: 20px">
+  <h1>Borders and Backgrounds</h1>
+  <h2>Border Syntax</h2>
+  <ul>
+    <li><b>Individual Properties</b>
+      <ul>
+        <li>border-top-style: solid;</li>
+        <li>border-right-style: solid;</li>
+        <li>border-bottom-style: solid;</li>
+        <li>border-left-style: solid;</li>
+        <br>
+        <li>border-top-width: 1px;</li>
+        <li>border-right-width: 1px;</li>
+        <li>border-bottom-width: 1px;</li>
+        <li>border-left-width: 1px;</li>
+        <br>
+        <li>border-top-color: black;</li>
+        <li>border-right-color: black;</li>
+        <li>border-bottom-color: black;</li>
+        <li>border-left-color: black;</li>
+      </ul>
+    </li>
+    <li><b>Shorthand Notation</b>
+    <ul>
+      <li>border-top: 1px solid black;</li>
+      <li>border-right: 1px solid black;</li>
+      <li>border-bottom: 1px solid black;</li>
+      <li>border-left: 1px solid black;</li>
+      <br>
+      <li>If all sides will be the same, this shorthand can be condensed even more:</li>
+      <li>border: 1px solid black;</li>
+    </ul>
+    </li>
+  </ul>
+  <h2>Note:</h2>
+  <ul>
+    <li>Borders do affect the overall width of an element.</li>
+    <li>Border widths begin at the edge of padding widths and extend outward</li>
+    <li>Example: .element {width: 100px; padding: 20px; border: 5px;}  -- The total width of this element is 100 + 20 + 20 + 5 + 5 = 150px</li>
+  </ul>
+
+  <h2>Border Styles</h2>
+  <ul>
+    <li><b>10 Options</b></li>
+    <li>border-style: none</li>
+    <li>border-style: hidden</li>
+    <br>
+    <li><b>Single Flat Line:</b></li>
+    <li>border-style: solid</li>
+    <li>border-style: dotted</li>
+    <li>border-style: dashed</li>
+    <br>
+    <li><b>Dimensional Line Effect - Often require a width value of more than one</b></li>
+    <li>border-style: double</li>
+    <li>border-style: groove</li>
+    <li>border-style: ridge</li>
+    <li>border-style: inset</li>
+    <li>border-style: outset</li>
+  </ul>
+  <h2>Border Color</h2>
+  <ul>
+    <li>Allows you to define a specific color for your border that's independent of an element's foreground and background color</li>
+    <li>border-color: green;</li>
+  </ul>
+  <h2>Border vs. Outline</h2>
+  <ul>
+    <li>An outline is drawn just outside of the border's edge.</li>
+    <li>Outlines are important for usability and accessability</li>
+    <li>Outlines
+      <ul>
+        <li>They always go around all the sides. (You can't specify particular sides like you can with a border)</li>
+        <li>They're not part of the box model, so they won't affect the position of the element or adjacent elements</li>
+        <li>Avoid setting an outline to 0 or none. This will remove the browser's default focus style. 
+          If an element can be interacted with, it needs a visible focus indicator</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Background</h2>
+  <ul>
+  <li>
+    <b>Individual Properties</b>
+  <ul>
+    <li>background-attachment: //value;</li>
+    <li>background-clip: //value;</li>
+    <li>background-color: //value;</li>
+    <li>background-image: //value;</li>
+    <li>background-origin: //value;</li>
+  </ul>
+</li>
+<li>
+  <b>Shorthand Notation</b>
+<ul>
+  <li>background is shorthand CSS, letting you define all background style properties at once, such as color, image, size, etc.</li>
+  <li>background: url(text.jpg) no-repeat center;</li>
+  <li>The default style for most elements is to have a transparent background - you can see through them.</li>
+  <li>By explicitly setting the background property, you can choose to display solid colors, gradients, or even images behind an element's content.</li>
+</ul>
+</li>
+<li><b>When specifying a background image, versus a color, you can control its position whether it repeats along an axis, the image size, and more.</b>
+  <ul>
+    <li>backgroun-image: url(star.jpg);</li>
+    <li>backgroun-position: left;</li>
+    <li>backgroun-repeat: repeat-x;</li>
+    <li>backgroun-size: 200px;</li>
+  </ul>
+</li>
+<li><b>Backgrounds can have both a background color and a background image</b>
+<ul>
+  <li>Background colors are layered underneath background images</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
