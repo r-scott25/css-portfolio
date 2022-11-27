@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body  style="font-family: sans-serif; font-size: 20px">
+  <h1>CSS: Cascade</h1>
+  <H2>CSS Cascade Level 4 Specification</H2>
+  <ul>
+    <li>The cascade takes an unordered list of declared values for a given property on a given element, </li>
+    <li>sorts them by their declaration's precedence, </li>
+    <li>and outputs a single cascaded value.</li>
+  </ul>
+  <h2>The Cascade Algorithm</h2>
+  <p>Here are the things the Cascade Algorithm checks, listed in order from highest weight to least weight:</p>
+  <ol>
+    <li>Origin and Importance</li>
+    <li>Specificity</li>
+    <li>Order of Appearance</li>
+    <li>Inheritance</li>
+  </ol>
+  <h2>Origin and Importance</h2>
+  <ul>
+    <li>Highest weighted attribute</li>
+    <li>Inculdes:
+      <ul>
+        <li>user agent styles</li>
+        <li>browser overrides set by an individual user</li>
+        <li>CSS that you, as the developer, use</li>
+      </ul> 
+    </li>
+    <li>The importance of a CSS declaration is determined by the Important Syntax: !important</li>
+    <li>Adding !important to a CSS rule automatically jumps it to the front of the cascade algorithm</li>
+  </ul>
+
+  <h2>Specificity</h2>
+  <ul>
+    <li>The more specific selector wins.</li>
+    <li>A class selector is more specific than an element selector</li>
+    <li>An id selector is more specific than a class selector</li>
+  </ul>
+
+  <h2>Source Order</h2>
+  <ul>
+    <li>Refers to where the style rule is coming from (i.e. user agent, external style sheet, embedded style, 
+      inline style)</li>
+    <li>Refers also to the order that rules are written within a single style sheet.
+      <ul>
+        <li>
+          Example: <br>
+                  h1 {color: blue;} <br>
+                  h1 {color: orange;}
+        </li>
+        <li>These two rules could apply to the h1 element. The h1 ends up being colored orange because because both 
+          rules have an identical element selector and, therefore, carry the same specificity. But, the last one in the source order wins.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Inheritance</h2>
+<ul>
+  <li>Some CSS property values set on parent elements are inherited by their child elements.</li>
+  <li>For example, font color or font family can be set on parent elements and inherited by child elements.</li>
+  <li>Child elements DON'T ALWAYS inherit property values from the parent.</li>
+  <li>For example, if we set a width of 50% on a parent element, we wouldn't want all descendants to be 50% of that width.</li>
+</ul>
+
+
+
+</body>
+</html>
