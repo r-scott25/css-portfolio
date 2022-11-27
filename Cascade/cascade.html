@@ -78,6 +78,45 @@
 <li>html element score: 0, 0, 1 (can be read as 1)</li>
 <li>Combination Example: h1#sitetitle .logo: 1, 1, 1 (can be read as 111)</li>
 <li>The highest specificity score wins, which make it the most specific of the bunch/li>
+</ul>
+
+<h2>The Important Rule</h2>
+<h3 style="margin-left: 60px;">!important</h3>
+<ul>
+  <li>In CSS, you can apply the !important property to add more weight, or importance, to a property value pair than normal</li>
+  <li>Example: margin-left: 0 !important</li>
+  <li>We know that the below CSS code would return an h1 that is orange because the rule with orange is listed last.
+    <ul>
+      <li>
+        h1 {color: blue;} <br>
+        h1 {color: orange;}
+      </li>
+    </ul>
+  </li>
+  <li>However, if we apply the !important property to the declaration of the first h1, the CSS code would return an h1 that is blue:
+    <ul>
+      <li>
+        h1 {color: blue !important;} <br>
+        h1 {color: orange;}
+      </li>
+    </ul>
+  </li>
+
+  <h2>When to Use !important</h2>
+  <ul>
+    <li>Override styles coming from code you don't control (third-party code)</li>
+    <li>Generally, do everything you can to <b>avoid using !important</b>. <br>
+      It's considered a bad practice because it breaks the natural cascade algorithm, making debugging much more difficult.</li>
+  </ul>
+
+  <h2>!important Rules of Thumb</h2>
+  <ul>
+    <li>Always try to solve the problem with greater specificity before resorting to !important. Make better use of the cascade by using more specific rules.</li>
+    <li>Only use !important to overwrite CSS from an outside source.</li>
+    <li>Completely avoid !important when writing code for other developers to use.</li>
+    <li>Avoid !important on site-wide CSS.</li>
+  </ul>
+  
 
 </ul>
 
