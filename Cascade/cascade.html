@@ -68,6 +68,18 @@
   <li>For example, if we set a width of 50% on a parent element, we wouldn't want all descendants to be 50% of that width.</li>
 </ul>
 
+<h2>Calculating Specificity</h2>
+<ul>
+<li>Each CSS rule has a weight score based on the elements that make up the selector</li>
+<li>The score is comprised of how many IDs are used, classes, and elements. And you get points respectively for each of those.</li>
+<li><a href="https://polypane.app/css-specificity-calculator/" target="_blank">Specificity Calculator</a></li>
+<li>ID score: 1, 0, 0 (can be read as 100)</li>
+<li>class score: 0, 1, 0 (can be read as 10)</li>
+<li>html element score: 0, 0, 1 (can be read as 1)</li>
+<li>Combination Example: h1#sitetitle .logo: 1, 1, 1 (can be read as 111)</li>
+<li>The highest specificity score wins, which make it the most specific of the bunch/li>
+
+</ul>
 
 
 </body>
