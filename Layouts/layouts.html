@@ -23,7 +23,7 @@
         </li>
       </ul>
     </li>
-    <li><b></b>CSS Floats, positioning, and clears
+    <li><b>CSS Floats, positioning, and clears</b>
       <ul>
         <li>Not <i>really</i> a layout system, but it did give us the ability to manipulate where elements appeared on a page relative to their neighboring elements. </li>
       </ul>
@@ -157,6 +157,53 @@
     <li>Foundation</li>
     <li>Bootstrap</li>
     <li>Tailwind</li>
+  </ul>
+
+
+  <h2>Responsive Web Design</h2>
+  <h3>An approach to web design used to create layouts that respond to the device used to view the content</h3>
+  <h3>CSS Gives Us Multiple Ways to Achieve This:</h3>
+  <ul>
+    <li><b>Media Queries</b>
+    <ul>
+      <li>Can be used to check many things:</li>
+      <li>Width and height of a viewport</li>
+      <li>Width and height of the device</li>
+      <li>Orientation (portrait/landscape</li>
+      <li>Resolution</li>
+    </ul>
+  </li>
+  <li><b>Flexbox and Grid</b>
+  <ul>
+    <li>Responsive by default</li>
+    <li>In Flexbox, flex items will shrink and distribute space between the items according to the space available 
+        in their parent container. You can specify values to indicate how you want those items to behave when there's 
+        either more space or less space around them.</li>
+    <li>CSS Grid allows the distribution of available space in a container across grid tracks. So, grid responds natively to whatever the container size is.</li>
+  </ul>
+</li>
+<li><b>Typography Responses</b>
+<ul>
+  <li>Using media queries, we can also make typography responsive</li>
+  <li>For example, if we have a base font size of 20px, we can then scale that up or down using rem units.
+    <ul>
+      <li>
+        html { font-size; 20px; } <br>
+        h1 { font-size 2rem; } <br>
+        @media (min-width: 1200px) { h1 { font-size: 4rem;} }
+      </li>
+    </ul>
+  </li>
+  <li>Alternatively, you can use the view port width to dynamially calculate font size
+    <ul>
+      <li>
+        &lt;meta name="viewport" <br>
+        content="width=devide-width, initial-scale=1"&gt;
+      </li>
+    </ul>
+  </li>
+</ul>
+</li>
   </ul>
 
 
