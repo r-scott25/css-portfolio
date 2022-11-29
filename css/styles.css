@@ -13,6 +13,12 @@ https://coolors.co/ed6a5e-377771-bbb891-212738-2e2e3a
 
 /* Global Styles
 ----------------------------------- */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 body {
     color: #393E46;
     margin: 0;
@@ -83,6 +89,22 @@ header {
     padding: 8px;
     border-radius: 4px;
     display: inline-block;
+}
+.projects .btn-web:hover {
+    background:rgba(148, 180, 159, .6);
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 2px dashed #94B49F;
+    padding: 25px 0;
+}
+.project-item img{
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
 }
 
 /* Work Experience
