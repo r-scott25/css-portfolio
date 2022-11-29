@@ -28,9 +28,13 @@ a {
 a:hover {
     color: #ECB390;
 }
+h2{
+    margin:0;
+}
 .content-wrap {
     width: 800px;
     margin: 0 auto;
+    padding: 60px 0;
 }
 
 
@@ -55,6 +59,7 @@ header {
     background: #ECB390;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
     background:rgba(236, 179, 144, 80%);
