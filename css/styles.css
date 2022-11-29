@@ -7,6 +7,8 @@ https://coolors.co/ed6a5e-377771-bbb891-212738-2e2e3a
 #343434
 #282A3A
 #393E46
+#665A48
+
 */
 
 /* Global Styles
@@ -17,7 +19,14 @@ body {
 img {
     width: 300px;
 }
+a {
+    color: #665A48;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #ECB390;
+}
 
 
 /* Profile
@@ -34,7 +43,18 @@ header {
     background:#FCF8E8;
 }
 
+.projects a {
 
+}
+.projects .btn {
+    color: #FCF8E8;
+    background: #ECB390;
+    padding: 8px;
+    border-radius: 4px;
+}
+.projects .btn:hover {
+    background:rgba(236, 179, 144, 80%);
+}
 
 /* Work Experience
 ----------------------------------- */
