@@ -61,6 +61,7 @@ h1, h2 {
 header {
     background: #ECB390;
     color: #fcf9ee;
+    text-align: center;
 }
 
 
@@ -72,6 +73,8 @@ header {
 }
 .projects a {
 }
+
+
 .projects .btn {
     color: #FCF8E8;
     background: #ECB390;
@@ -114,7 +117,14 @@ header {
     
 }
 
-
+.job-summary-title {
+    font-weight: 600;
+}
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
 
 /* Education
 ----------------------------------- */
@@ -129,4 +139,16 @@ header {
 footer {
     background: #94B49F;
     color: #FCF8E8;
+    text-align: center;
+}
+.contact-list{
+    list-style: none;
+    padding: 0;
+    font-weight: 510;
+    display: flex;
+    justify-content: center;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
 }
