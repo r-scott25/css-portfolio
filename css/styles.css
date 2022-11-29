@@ -14,7 +14,9 @@ https://coolors.co/ed6a5e-377771-bbb891-212738-2e2e3a
 /* Global Styles
 ----------------------------------- */
 body {
-    color: #393E46
+    color: #393E46;
+    margin: 0;
+    padding: 0;
 }
 img {
     width: 300px;
@@ -23,9 +25,12 @@ a {
     color: #665A48;
     text-decoration: none;
 }
-
 a:hover {
     color: #ECB390;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
 }
 
 
@@ -33,6 +38,7 @@ a:hover {
 ----------------------------------- */
 header {
     background: #ECB390;
+    color: #fcf9ee;
 }
 
 
@@ -42,9 +48,7 @@ header {
 .projects {
     background:#FCF8E8;
 }
-
 .projects a {
-
 }
 .projects .btn {
     color: #FCF8E8;
@@ -60,6 +64,7 @@ header {
 ----------------------------------- */
 .work-experience {
     background: #CEE5D0;
+    
 }
 
 
