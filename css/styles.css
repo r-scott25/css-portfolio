@@ -87,11 +87,11 @@ header {
 ----------------------------------- */
 .projects {
     background:#FCF8E8;
+
 }
 .projects a {
+    color: #ECB390;
 }
-
-
 .projects .btn {
     color: #FCF8E8;
     background: #ECB390;
@@ -170,7 +170,7 @@ footer {
         text-align: center;
     }
     .project-item img{
-        float: left;
+        /* float: left; */
         margin-right: 20px;
     }
     .job-item {
