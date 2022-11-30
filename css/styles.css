@@ -55,7 +55,24 @@ h1, h2 {
     padding: 60px 0;
 }
 
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin:0;
+}
 
+.divider > section {
+    border-bottom: 2px dashed #94B49F;
+    padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+    border-bottom: none;
+}
 /* Profile
 ----------------------------------- */
 header {
@@ -98,8 +115,6 @@ header {
 }
 .project-item {
     overflow: hidden;
-    border-bottom: 2px dashed #94B49F;
-    padding: 25px 0;
 }
 .project-item img{
     float: left;
